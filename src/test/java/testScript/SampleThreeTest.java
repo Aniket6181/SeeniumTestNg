@@ -13,7 +13,7 @@ public class SampleThreeTest {
 	  System.out.println("Testtwo in SampleThree");
   }
   
-  @Test
+  @Test(groups="featureThree")
   public void testthree() {
 	  System.out.println("Testhree in SampleThree");
   }
