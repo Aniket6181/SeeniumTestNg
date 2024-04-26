@@ -1,37 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="4" total="8" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-26T05:17:58 GMT" name="Default suite" finished-at="2024-04-26T05:18:13 GMT" duration-ms="14782">
+  <suite started-at="2024-04-26T06:22:47 GMT" name="SampleSuite" finished-at="2024-04-26T06:22:47 GMT" duration-ms="78">
     <groups>
+      <group name="featureTwo">
+        <method signature="SampleThreeTest.testtwo()[pri:0, instance:testScript.SampleThreeTest@e1de817]" name="testtwo" class="testScript.SampleThreeTest"/>
+        <method signature="SampleTwoTest.Testtwo()[pri:0, instance:testScript.SampleTwoTest@5939a379]" name="Testtwo" class="testScript.SampleTwoTest"/>
+      </group> <!-- featureTwo -->
+      <group name="featureOne">
+        <method signature="SampleThreeTest.testone()[pri:0, instance:testScript.SampleThreeTest@e1de817]" name="testone" class="testScript.SampleThreeTest"/>
+        <method signature="SampleTwoTest.Testone()[pri:0, instance:testScript.SampleTwoTest@5939a379]" name="Testone" class="testScript.SampleTwoTest"/>
+      </group> <!-- featureOne -->
     </groups>
-    <test started-at="2024-04-26T05:17:58 GMT" name="Default test" finished-at="2024-04-26T05:18:13 GMT" duration-ms="14782">
-      <class name="testScript.GooglePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testScript.GooglePageTest@3541cb24]" started-at="2024-04-26T05:17:58 GMT" name="setup" finished-at="2024-04-26T05:18:00 GMT" duration-ms="2210" status="PASS">
+    <test started-at="2024-04-26T06:22:47 GMT" name="ModuleOneTest" finished-at="2024-04-26T06:22:47 GMT" duration-ms="78">
+      <class name="testScript.SampleThreeTest">
+        <test-method signature="testone()[pri:0, instance:testScript.SampleThreeTest@e1de817]" started-at="2024-04-26T06:22:47 GMT" name="testone" finished-at="2024-04-26T06:22:47 GMT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="appiumSearchTest()[pri:0, instance:testScript.GooglePageTest@3541cb24]" started-at="2024-04-26T05:18:00 GMT" name="appiumSearchTest" finished-at="2024-04-26T05:18:04 GMT" duration-ms="3543" status="PASS">
+        </test-method> <!-- testone -->
+        <test-method signature="testtwo()[pri:0, instance:testScript.SampleThreeTest@e1de817]" started-at="2024-04-26T06:22:47 GMT" name="testtwo" finished-at="2024-04-26T06:22:47 GMT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- appiumSearchTest -->
-        <test-method signature="cucumberSearchTest()[pri:0, instance:testScript.GooglePageTest@3541cb24]" started-at="2024-04-26T05:18:04 GMT" name="cucumberSearchTest" finished-at="2024-04-26T05:18:06 GMT" duration-ms="1886" status="PASS">
+        </test-method> <!-- testtwo -->
+      </class> <!-- testScript.SampleThreeTest -->
+      <class name="testScript.SampleTwoTest">
+        <test-method signature="Testone()[pri:0, instance:testScript.SampleTwoTest@5939a379]" started-at="2024-04-26T06:22:47 GMT" name="Testone" finished-at="2024-04-26T06:22:47 GMT" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cucumberSearchTest -->
-        <test-method signature="seleniumSearchTest()[pri:1, instance:testScript.GooglePageTest@3541cb24]" started-at="2024-04-26T05:18:06 GMT" name="seleniumSearchTest" finished-at="2024-04-26T05:18:10 GMT" duration-ms="4188" status="PASS">
+        </test-method> <!-- Testone -->
+        <test-method signature="Testtwo()[pri:0, instance:testScript.SampleTwoTest@5939a379]" started-at="2024-04-26T06:22:47 GMT" name="Testtwo" finished-at="2024-04-26T06:22:47 GMT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- seleniumSearchTest -->
-        <test-method signature="javaSearchTest()[pri:2, instance:testScript.GooglePageTest@3541cb24]" started-at="2024-04-26T05:18:10 GMT" name="javaSearchTest" finished-at="2024-04-26T05:18:13 GMT" duration-ms="2663" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- javaSearchTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testScript.GooglePageTest@3541cb24]" started-at="2024-04-26T05:18:13 GMT" name="teardown" finished-at="2024-04-26T05:18:13 GMT" duration-ms="245" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testScript.GooglePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- Testtwo -->
+      </class> <!-- testScript.SampleTwoTest -->
+    </test> <!-- ModuleOneTest -->
+  </suite> <!-- SampleSuite -->
 </testng-results>

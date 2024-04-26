@@ -2,9 +2,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="SampleSuite">
   <test thread-count="5" name="ModuleOneTest">
+  <groups>
+    <run>
+       <include name="featureOne"/>
+       <include name="featureTwo"/>
+            
+    </run>
+  </groups>
     <classes>
-      <class name="testScript.GooglePageTest"/>
-      <class name="testScript.LoginPageTest"/>
+      <class name="testScript.SampleTwoTest"/>
+      <class name="testScript.SampleThreeTest"/>
       
     </classes>
   </test> <!-- ModuleOneTest -->

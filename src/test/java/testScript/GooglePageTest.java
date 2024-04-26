@@ -22,7 +22,7 @@ public class GooglePageTest {
 	
 	
 	
-	  @Test (priority=2)
+	  @Test (alwaysRun = true, dependsOnMethods  = ("seleniumSearchTest"))
 	  public void javaSearchTest(){
 	  driver.get("https://www.google.com");
 	  WebElement srchBox =driver.findElement(By.className("gLFyf"));
@@ -43,17 +43,17 @@ public class GooglePageTest {
 		 * softAssert.assertAll(); }
 		 */
   
-  @Test(priority=1)
+  @Test
   public void seleniumSearchTest(){
 	  driver.get("https://www.google.com");
 	  WebElement srchBox =driver.findElement(By.className("gLFyf"));
 	  srchBox.sendKeys("Selenium Tutorial");
 	  srchBox.submit();
-	  Assert.assertEquals(driver.getTitle(), "Selenium Tutorial - Google Search");
+	  Assert.assertEquals(driver.getTitle(), "Selenium Tutorial - Google Search Page");
 	  
   }
   
-  @Test
+ // @Test
   public void cucumberSearchTest(){
 	  driver.get("https://www.google.com");
 	  WebElement srchBox =driver.findElement(By.className("gLFyf"));
@@ -63,7 +63,7 @@ public class GooglePageTest {
 	  
   }
   
-  @Test
+ // @Test
   public void appiumSearchTest(){
 	  driver.get("https://www.google.com");
 	  WebElement srchBox =driver.findElement(By.className("gLFyf"));

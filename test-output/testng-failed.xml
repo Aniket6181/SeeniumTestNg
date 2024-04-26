@@ -5,9 +5,8 @@
     <classes>
       <class name="testScript.GooglePageTest">
         <methods>
-          <include name="cucumberSearchTest"/>
           <include name="setup"/>
-          <include name="appiumSearchTest"/>
+          <include name="seleniumSearchTest"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- testScript.GooglePageTest -->
